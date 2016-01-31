@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/ui-darkness/jquery-ui.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     </head>
     <body>
         <!-- nav -->
@@ -113,6 +116,22 @@
                         <li><a href="javascript:;" class="filter" data-filter=".try">Try</a></li>
                     </ul>
                 </nav>
+
+                <!-- TABS -->
+                <ul class='tabs'>
+                    <li><a href='#tab1'>Tab 1</a></li>
+                    <li><a href='#tab2'>Tab 2</a></li>
+                    <li><a href='#tab3'>Tab 3</a></li>
+                </ul>
+                <div id='tab1'>
+                    <p>Hi, this is the first tab.</p>
+                </div>
+                <div id='tab2'>
+                    <p>This is the 2nd tab.</p>
+                </div>
+                <div id='tab3'>
+                    <p>And this is the 3rd tab.</p>
+                </div>
             </div>
         </section>
 
@@ -183,7 +202,43 @@
             </div>
 
         </section>
+        <section id="modal-form" class="modal-form">
+            <div class="container">
+                    <h2>Modal form</h2>
+                    <!--<div id="dialog-form" title="Create new user">
 
+                        <form action="index.html" method="post">
+                            <fieldset>
+                                <div class="input-field">
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name" required="">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                                </div>
+                                <div class="input-field message">
+                                    <textarea name="message" class="form-control" placeholder="Your Message" required=""></textarea>
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
+
+
+                <input type="submit" class="btn btn-blue pull-right" value="SEND MESSAGE" id="msg-submit">-->
+                <div id="dialog" title="Dialog Form">
+                    <form action="" method="post">
+                        <label for="name">Name:</label>
+                        <input id="name" name="name" type="text">
+                        <label for="email2">Email:</label>
+                        <input id="email2" name="email" type="text">
+                        <input id="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+                <h2>jQuery Dialog Form Example</h2>
+                <p>Click below button to see jQuery dialog form.</p>
+                <input id="button" type="button" value="Open Dialog Form">
+                </div>
+        </section>
         <section id="tool-tips">
             <div class="container">
                 <h2>Tool-tip</h2>
