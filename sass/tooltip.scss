@@ -1,0 +1,36 @@
+label {
+  display: inline-block;
+  width: 5em;
+}
+
+#tool-tips {
+  background-color: #1f2021;
+  color: #fff;
+  line-height: 24px;
+}
+
+.subscription-form {
+  color: #fff;
+  position: relative;
+}
+
+
+.subscription-form .subscribe {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  height: 58px;
+  text-indent: 60px;
+  width: 100%;
+}
+
+.subscription-form #mail-submit {
+  background-color: #00c7fc;
+  border: 0 none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 16px 35px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+}

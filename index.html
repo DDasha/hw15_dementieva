@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+ <html lang="en" class="no-js">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <title>JQuery</title>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css"></head>
+    <!-- JQuery -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    </head>
+    <body>
+        <!-- nav -->
+        <header id="navigation" class="navbar-fixed-top">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    </div>
+                    <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
+                        <ul id="nav" class="nav navbar-nav">
+                            <li class="current"><a href="#home">Slider1</a></li>
+                            <li><a href="#slider2">Slider2</a></li>
+                            <li><a href="#tabs">Tabs</a></li>
+                            <li><a href="#acc">Accordion</a></li>
+                            <li><a href="#modal-form">Modal forms</a></li>
+                            <li><a href="#tool-tips">Tool-tips</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+        </header>
+
+
+        <!-- slider1 -->
+        <section id="home">
+            <div id="home-carousel" class="carousel slide" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#home-carousel" data-slide-to="1"></li>
+                    <li data-target="#home-carousel" data-slide-to="2"></li>
+                </ol><div class="carousel-inner">
+
+                    <div class="item active"  style="background-image: url('img/slider/bg2.jpg')" >
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('img/slider/bg2.jpg')">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('img/slider/bg3.jpg')">
+                         <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+                <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+                    <a class="sl-prev hidden-xs" href="#home-carousel" data-slide="prev">
+                        <i class="fa fa-angle-left fa-3x"></i>
+                    </a>
+                    <a class="sl-next" href="#home-carousel" data-slide="next">
+                        <i class="fa fa-angle-right fa-3x"></i>
+                    </a>
+                </nav>
+
+            </div>
+        </section>
+
+
+        <section id="slider2">
+            <div class="container">
+                <h2>Slider2</h2>
+                <div id="owl-demo">
+
+                    <div class="item"><img src="img/owl1.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/owl2.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/owl3.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/owl4.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/owl5.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/owl6.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/owl7.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/owl8.jpg" alt="Owl Image"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="tabs">
+            <div class="container">
+                <h2>Tabs</h2>
+                <nav class="project-filter clearfix text-center wow fadeInLeft"  data-wow-delay="0.5s">
+                    <ul class="list-inline">
+                        <li><a href="javascript:;" class="filter" data-filter="all">All</a></li>
+                        <li><a href="javascript:;" class="filter" data-filter=".app">App</a></li>
+                        <li><a href="javascript:;" class="filter" data-filter=".project">Project</a></li>
+                        <li><a href="javascript:;" class="filter" data-filter=".else">Else</a></li>
+                        <li><a href="javascript:;" class="filter" data-filter=".try">Try</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="acc">
+            <div class="container">
+                <h2>Accordion</h2>
+               <!-- <div id="accordion">
+                    <h3>Section 1</h3>
+                    <div>
+                        <p>
+                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                        </p>
+                    </div>
+                    <h3>Section 2</h3>
+                    <div>
+                        <p>
+                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                            suscipit faucibus urna.
+                        </p>
+                    </div>
+                    <h3>Section 3</h3>
+                    <div>
+                        <p>
+                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                        </p>
+                        <ul>
+                            <li>List item one</li>
+                            <li>List item two</li>
+                            <li>List item three</li>
+                        </ul>
+                    </div>
+                    <h3>Section 4</h3>
+                    <div>
+                        <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                        </p>
+                        <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>-->
+                <dl class="accordion">
+
+                    <dt><a href="">Panel 1</a></dt>
+                    <dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+
+                    <dt><a href="">Panel 2</a></dt>
+                    <dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+
+                    <dt><a href="">Panel 3</a></dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+
+                </dl>
+
+            </div>
+
+        </section>
+
+        <section id="tool-tips">
+            <div class="container">
+                <h2>Tool-tip</h2>
+                <div class="row">
+
+                    <div class="col-md-7 wow">
+                        <form action="#" method="post" class="subscription-form">
+                            <input type="email" name="subscribe" class="subscribe" placeholder="YOUR MAIL" required="" id="email" title="We ask for your email to get in touch with you.">
+                            <input type="submit" value="SUBSCRIBE" id="mail-submit">
+                        </form>
+                    </div>
+
+                    <div class="col-md-4 text-left wow">
+                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blan dit aliquet elit, eget tincidunt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer id="footer" class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="social">
+                            <p>Your socials here.</p>
+                        </div>
+
+                        <div class="author">
+                           <p>Made by</p>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- jquery.nav -->
+        <script src="js/jquery.nav.js"></script>
+        <!-- jQuery Appear -->
+        <script src="js/jquery.appear.js"></script>
+        <!-- owl carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- WOW script -->
+        <script src="js/wow.min.js"></script>
+        <!-- my scripts -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+#projects {
+  width: 100%;
+}
+
+.project-filter {
+  margin-bottom: 40px;
+}
+
+.project-filter ul li {
+  padding: 0;
+}
+
+.project-filter ul li a {
+  color: #000;
+  display: block;
+  line-height: 18px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.project-filter ul li a:hover,
+.project-filter ul li a.active {
+  background-color: #00C7FC;
+  color: #fff;
+}
